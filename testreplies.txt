@@ -1,0 +1,42 @@
+// Test Replies
+
+// A standard reply to "hello", with multiple responses.
++ hello
+- Hello there!
+- What's up?
+- This is random, eh?
+
+// A simple one-reply response to "what's up"
++ what's up
+- Not much, you?
+
+// A test using <star1>
++ say *
+- Um.... "<star1>"
+
+// This reply is referred to below.
++ identify yourself
+- I am Alpha.
+
+// Refers the asker back to the reply above.
++ who are you
+@ identify yourself
+
+// Conditionals Test
++ am i your master
+* if master = 1::Yes, you are my master.
+- No, you are not my master.
+
+// A Conversation Holder: Knock Knock!
++ knock knock
+- Who's there?
+& <msg> who?
+& Ha! <msg>! That's a good one!
+
+// A Conversation Holder: Rambling!
++ are you crazy
+- I was crazy once.
+& They locked me away...
+& In a room with padded walls.
+& There were rats there...
+& Did I mention I was crazy once?
